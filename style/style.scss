@@ -1,1 +1,46 @@
+body {
+    background: #002;
+    overflow: hidden;
+}
 
+.fancy {
+    position: absolute;
+    background: rgb(248, 235, 235);
+    opacity: 0.05;
+    height: 700px;
+    width: 700px;
+    border-radius: 58% 42% 53% 47% / 42% 36% 64% 58%;
+    animation: bouncing 20s infinite ease-in-out;
+    &:nth-child(2) {
+        height: 1200px;
+        width: 1200px;
+        right: 0%;
+        animation: bouncing 30s infinite ease-in-out;
+    }
+    &:nth-child(3) {
+        height: 1000px;
+        width: 1000px;
+        bottom: -90%;
+        animation: bouncing 28s infinite ease-in-out;
+    }
+}
+
+@keyframes bouncing {
+    0% {
+        border-radius: 58% 42% 53% 47% / 42% 36% 64% 58%;
+        transform: translateX(0) translateY(-100px);
+    }
+
+    35% {
+        border-radius: 58% 42% 53% 47% / 42% 36% 64% 58%;
+    }
+
+    60% {
+        border-radius: 39% 61% 38% 62% / 54% 58% 42% 46%;
+        transform: translateX(100px) translateY(150px) rotate(180deg);
+    }
+    100% {
+        border-radius: 58% 42% 53% 47% / 42% 36% 64% 58%;
+        transform: translateX(0px) translateY(-100px) rotate(0deg);
+    }
+}

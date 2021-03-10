@@ -1,1 +1,74 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  background: #002;
+  overflow: hidden;
+}
+
+.fancy {
+  position: absolute;
+  background: #f8ebeb;
+  opacity: 0.05;
+  height: 700px;
+  width: 700px;
+  border-radius: 58% 42% 53% 47% / 42% 36% 64% 58%;
+  -webkit-animation: bouncing 20s infinite ease-in-out;
+          animation: bouncing 20s infinite ease-in-out;
+}
+
+.fancy:nth-child(2) {
+  height: 1200px;
+  width: 1200px;
+  right: 0%;
+  -webkit-animation: bouncing 30s infinite ease-in-out;
+          animation: bouncing 30s infinite ease-in-out;
+}
+
+.fancy:nth-child(3) {
+  height: 1000px;
+  width: 1000px;
+  bottom: -90%;
+  -webkit-animation: bouncing 28s infinite ease-in-out;
+          animation: bouncing 28s infinite ease-in-out;
+}
+
+@-webkit-keyframes bouncing {
+  0% {
+    border-radius: 58% 42% 53% 47% / 42% 36% 64% 58%;
+    -webkit-transform: translateX(0) translateY(-100px);
+            transform: translateX(0) translateY(-100px);
+  }
+  35% {
+    border-radius: 58% 42% 53% 47% / 42% 36% 64% 58%;
+  }
+  60% {
+    border-radius: 39% 61% 38% 62% / 54% 58% 42% 46%;
+    -webkit-transform: translateX(100px) translateY(150px) rotate(180deg);
+            transform: translateX(100px) translateY(150px) rotate(180deg);
+  }
+  100% {
+    border-radius: 58% 42% 53% 47% / 42% 36% 64% 58%;
+    -webkit-transform: translateX(0px) translateY(-100px) rotate(0deg);
+            transform: translateX(0px) translateY(-100px) rotate(0deg);
+  }
+}
+
+@keyframes bouncing {
+  0% {
+    border-radius: 58% 42% 53% 47% / 42% 36% 64% 58%;
+    -webkit-transform: translateX(0) translateY(-100px);
+            transform: translateX(0) translateY(-100px);
+  }
+  35% {
+    border-radius: 58% 42% 53% 47% / 42% 36% 64% 58%;
+  }
+  60% {
+    border-radius: 39% 61% 38% 62% / 54% 58% 42% 46%;
+    -webkit-transform: translateX(100px) translateY(150px) rotate(180deg);
+            transform: translateX(100px) translateY(150px) rotate(180deg);
+  }
+  100% {
+    border-radius: 58% 42% 53% 47% / 42% 36% 64% 58%;
+    -webkit-transform: translateX(0px) translateY(-100px) rotate(0deg);
+            transform: translateX(0px) translateY(-100px) rotate(0deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
